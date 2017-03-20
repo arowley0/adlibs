@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mad Libs</title>
+    <style>
+      .form{
+      background-color: #FFFFFF;
+      font-family:Adamina;
+      color: Black;
+      font-size: 20px;
+      }
+      .submitbutton{
+      background-color: White;
+      border-radius: 20px;
+      color: Black;
+      }
+    </style>
+    <script src="//code.jquery.com/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="madlibform.js"></script>
+  </head>
+
+  <body>
+
+    <p>Enter some text below to generate a spectacular story</p>
+    <table border="2">
+      <thead>
+	<tr>
+	  <td> Noun</td>
+	  <td>
+	    <input type="text" name="noun0" size="20">
+	  </td>
+	  <td> Adjective</td>
+	  <td>
+	    <input type="text" name="adjective0" size="20">
+	  <td> Verb</td>
+	  <td>
+	    <input type="text" name="verb0" size="20">
+	</tr>
+    </table>
+    <p><input type="button" value="submit" onclick="submitFunction()"></p>
+    <p><input type="button" value="Reset" onclick="resetFunction()"></p>
+    </form>
+
+	
+	  
+   
+    <script>
+      function resetFunc() {
+      document.getelementById("madlibs").reset();
+      }
+      </script>
+      
+   
+  </body>
+</html>
+
