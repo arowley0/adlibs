@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="jquery-3.2.0.min.js"></script>
-    <script src="test_wb.js"></script>
-    <script src="test_libs.js"></script>
-    <script src="test_random.js"></script>
-    <title>Adlibs: A fun word game</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Adlibs</title>
   </head>
+
   <body>
-    <div class="container">
-      <h1>Adlibs</h1>
+    <div>
+      <label for="noun">Enter a noun:</label>
+      <input id="noun" type="text" placeholder="">
     </div>
+    <div>
+      <label for="adjective">Enter an adjective:</label>
+      <input id="adjective" type="text" placeholder="">
+    </div>
+    <div>
+      <label for="verb">Enter a verb:</label>
+      <input id="verb" type="text" placeholder="">
+      </div>
+
+    <div>
+      <button class=".randomize">Generate a story</button>
+    </div>
+
+    <p class="story"></p>
+    <script src="adlibform.js"></script>
   </body>
   </html>
